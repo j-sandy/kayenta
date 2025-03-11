@@ -23,6 +23,7 @@ public class SwaggerTest extends BaseIntegrationTest {
 
   @Test
   public void swaggerUiIsPresent() {
+    System.out.println(" #######serverport: " + serverPort);
     RestAssured.given()
         .port(serverPort)
         .get("/swagger-ui/index.html")
